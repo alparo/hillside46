@@ -124,7 +124,7 @@
 &kp GRAVE      &kp Q &kp W &kp E &kp R &kp T &kp Y                                                    &kp U   &kp I  &kp O   &kp P    &kp LBKT
 &kp LA(LC(TAB)) &hrm LGUI A &hrm LALT S &hrm LSHIFT D &hrm LCTRL F  &kp G                             &kp H  &hrm RCTRL J &hrm RSHIFT K &hrm LALT L &hrm RGUI SEMI &kp SQT
 &kp MINUS 	&kp Z &kp X &kp C &kp V &kp B   &kp ESC                                   &kp INSERT  &kp N  &kp M  &kp COMMA    &kp DOT &kp FSLH &kp BSLH
-                                &kp BSPC &lt NUM TAB &lt NUM SPACE &lt HK RETURN     &mt LALT RBKT &cw_ht NAV 0 &lt NAV BSPC &kp DEL
+                                &lt HK BSPC &lt HK TAB &lt NUM SPACE &lt HK RETURN     &mt LALT RBKT &cw_ht NAV 0 &lt HK BSPC &lt HK DEL
                         >;
                 };
 		
@@ -163,10 +163,10 @@ XXX         &kp KP_N1   &kp KP_N2 &kp KP_N3 &kp KP_N4 &kp KP_N5  ___            
                 hotkeys_layer {
 
                         bindings = <
-&kp LA(F4) XXX &kp LA(N7) &kp LA(N8) &kp LA(N9) &kp LG(LC(LEFT))           XXX XXX XXX XXX XXX XXX
-XXX        XXX &kp LA(N4) &kp LA(N5) &kp LA(N6) &kp LG(LC(RIGHT))          XXX XXX XXX XXX XXX XXX
-&kp LG(Z)  XXX &kp LA(N1) &kp LA(N2) &kp LA(N3) &kp LG(N0) ___         ___ XXX XXX XXX XXX XXX XXX
-                                        ___ ___ ___ ___    ___ ___ ___ ___
+&kp LA(F4) XXX &kp LA(N7) &kp LA(N8) &kp LA(N9) &kp LG(LC(LEFT))                            XXX &kp LA(U) &kp LA(I) &kp LA(O) &kp LA(P) XXX
+XXX        XXX &kp LA(N4) &kp LA(N5) &kp LA(N6) &kp LG(LC(RIGHT))                           &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) XXX XXX
+&kp LG(Z)  XXX &kp LA(N1) &kp LA(N2) &kp LA(N3) &kp LG(N0) ___                           ___ &kp LS(LA(H)) &kp LS(LA(J)) &kp LS(LA(K)) &kp LS(LA(L)) XXX XXX
+                                                   ___ ___ ___ ___                   ___ ___ ___ ___
                         >;
                 };
 		
