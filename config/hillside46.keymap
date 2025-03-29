@@ -106,8 +106,28 @@
                         flavor = "hold-preferred";
                         tapping-term-ms = <200>;
                         bindings = <&mo>, <&ss_cw>;
-                };
+                };           
 	};
+        macros {
+                win_left: win_left_macro {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                = <&macro_press &kp LGUI>
+                                , <&macro_tap &kp LEFT>
+                                , <&macro_release &kp LGUI>
+                                ;
+                };
+                win_right: win_right_macro {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                = <&macro_press &kp LGUI>
+                                , <&macro_tap &kp RIGHT>
+                                , <&macro_release &kp LGUI>
+                                ;
+                };     
+        }
 
 
         keymap {
@@ -192,7 +212,7 @@ XXX        XXX &kp LA(N4) &kp LA(N5) &kp LA(N6) &kp LG(LC(RIGHT))               
                         bindings = <
 &kp LG(LA(LC(N3)))      &kp LG(LC(UP))       &kp LG(LA(LS(LEFT)))     &kp LG(PG_UP)   &kp LG(LA(LS(RIGHT)))   &kp LG(LC(LEFT))                                        &kp LG(LA(LS(LEFT))) &kp LG(LA(LS(DOWN))) &kp LG(LA(LS(UP))) &kp LG(LA(LS(RIGHT))) &kp LA(P) XXX
 &kp LG(LA(LC(N2)))      &kp LA(TAB)          &kp LG(N1)               &kp LG(N2)      &kp LG(N3)              &kp LG(LC(RIGHT))                                       &kp LG(LEFT) &kp LG(DOWN) &kp LG(UP) &kp LG(RIGHT) XXX XXX
-&kp LG(LA(LC(N1)))      &kp LG(LC(DOWN))     &kp LG(LEFT)             &kp LG(PG_DN)   &kp LG(RIGHT)           &kp LG(LS(GRAVE)) ___                           ___    &kp LS(LA(H)) &kp LG(PG_DN) &kp LG(PG_UP) &kp LS(LA(L)) XXX XXX
+&kp LG(LA(LC(N1)))      &kp LG(LC(DOWN))     &win_left                &kp LG(PG_DN)   &win_right              &kp LG(LS(GRAVE)) ___                           ___    &kp LS(LA(H)) &kp LG(PG_DN) &kp LG(PG_UP) &kp LS(LA(L)) XXX XXX
                                                                                                                         ___ ___ ___ ___                   ___ ___ ___ ___
                         >;
                 };
