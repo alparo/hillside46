@@ -192,7 +192,7 @@ XXX        XXX &kp LA(N4) &kp LA(N5) &kp LA(N6) &kp LG(LC(RIGHT))               
                         bindings = <
 &kp LG(LA(LC(N3)))      &kp LG(LC(UP))       &kp LG(LA(LS(LEFT)))     &kp LG(PG_UP)   &kp LG(LA(LS(RIGHT)))   &kp LG(LC(LEFT))                                        &kp LG(LA(LS(LEFT))) &kp LG(LA(LS(DOWN))) &kp LG(LA(LS(UP))) &kp LG(LA(LS(RIGHT))) &kp LA(P) XXX
 &kp LG(LA(LC(N2)))      &kp LA(TAB)          &kp LG(N1)               &kp LG(N2)      &kp LG(N3)              &kp LG(LC(RIGHT))                                       &kp LG(LEFT) &kp LG(DOWN) &kp LG(UP) &kp LG(RIGHT) XXX XXX
-&kp LG(LA(LC(N1)))      &kp LG(LC(DOWN))     &kp LG(LEFT)             &kp LG(PG_DN)   &kp LG(RIGHT)           &kp LG(LS(NGRAVE)) ___                           ___    &kp LS(LA(H)) &kp LG(PG_DN) &kp LG(PG_UP) &kp LS(LA(L)) XXX XXX
+&kp LG(LA(LC(N1)))      &kp LG(LC(DOWN))     &kp LG(LEFT)             &kp LG(PG_DN)   &kp LG(RIGHT)           &kp LG(LS(GRAVE)) ___                           ___    &kp LS(LA(H)) &kp LG(PG_DN) &kp LG(PG_UP) &kp LS(LA(L)) XXX XXX
                                                                                                                         ___ ___ ___ ___                   ___ ___ ___ ___
                         >;
                 };
