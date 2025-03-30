@@ -26,11 +26,11 @@
 / {
     combos {
             compatible = "zmk,combos";
-        
+
             COMBO(cut,        &kp Cut,        26 28,     DEF,          COMBO_TERM_SLOW, COMBO_QUICK_TAP_MS)
             COMBO(copy,       &kp Copy,       26 27,     DEF,          COMBO_TERM_FAST, COMBO_QUICK_TAP_MS)
             COMBO(paste,      &kp Paste,      27 28,     DEF,          COMBO_TERM_FAST, COMBO_QUICK_TAP_MS)
-            COMBO(return,     &kp RETURN2,    30 40,     DEF,          COMBO_TERM_FAST, COMBO_QUICK_TAP_MS)
+            COMBO(return,     &kp ENTER,      30 40,     DEF,          COMBO_TERM_FAST, COMBO_QUICK_TAP_MS)
             COMBO(lang1,      &kp LC(LS(N1)), 15 16,     DEF,          COMBO_TERM_FAST, COMBO_QUICK_TAP_MS)
             COMBO(lang2,      &kp LC(LS(N2)), 19 20,     DEF,          COMBO_TERM_FAST, COMBO_QUICK_TAP_MS)
             COMBO(excl,       &kp EXCL,       13 25,     DEF,          COMBO_TERM_FAST, COMBO_QUICK_TAP_MS)
@@ -55,6 +55,5 @@
             COMBO(F10,        &kp F10,        10 22,     DEF,          COMBO_TERM_FAST, COMBO_QUICK_TAP_MS)
             COMBO(F11,        &kp F11,        11 23,     DEF,          COMBO_TERM_FAST, COMBO_QUICK_TAP_MS)
             COMBO(F12,        &kp F12,        0 12,      DEF,          COMBO_TERM_FAST, COMBO_QUICK_TAP_MS)
-
     };
 };
