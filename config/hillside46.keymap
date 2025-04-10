@@ -126,6 +126,16 @@
                                 , <&macro_tap &kp RIGHT>
                                 , <&macro_release &kp LGUI>
                                 ;
+                };
+                switch_to_3: switch_to_3_macro {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                = <&macro_press &kp LGUI>
+                                , <&macro_tap &kp N3>
+                                , <&macro_tap &kp PG_DN>
+                                , <&macro_release &kp LGUI>
+                                ;
                 };     
         };
 
@@ -145,7 +155,7 @@
 &kp GRAVE      &kp Q &kp W &kp E &kp R &kp T &kp Y                                                    &kp U   &kp I  &kp O   &kp P    &mt RBKT LBKT
 &kp LA(LC(TAB)) &hrm LGUI A &hrm LALT S &hrm LSHIFT D &hrm LCTRL F  &kp G                             &kp H  &hrm RCTRL J &hrm RSHIFT K &hrm LALT L &hrm RGUI SEMI &kp SQT
 &kp MINUS 	&kp Z &kp X &kp C &kp V &kp B   &kp ESC                                   &kp INSERT  &kp N  &kp M  &kp COMMA    &kp DOT &kp FSLH &kp BSLH
-                                &lt HK BSPC &lt FZ TAB &lt NUM SPACE &lt HK RETURN     &mt LALT RBKT &cw_ht NAV 0 &lt FZ BSPC &lt HK DEL
+                                &lt HK BSPC &lt FZ TAB &lt NUM SPACE &lt HK RETURN     XXX &cw_ht NAV 0 &lt FZ BSPC &mt LALT DEL
                         >;
                 };
 		
@@ -211,8 +221,8 @@ XXX        XXX &kp LA(N4) &kp LA(N5) &kp LA(N6) &kp LG(LC(RIGHT))               
 
                         bindings = <
 &kp LG(LA(LC(N3)))      &kp LG(LC(UP))       &kp LG(LA(LC(LEFT)))     &kp LG(PG_UP)   &kp LG(LA(LC(RIGHT)))   &kp LG(LC(LEFT))                                        &kp LG(LA(LS(LEFT))) &kp LG(LA(LS(DOWN))) &kp LG(LA(LS(UP))) &kp LG(LA(LS(RIGHT))) &kp LA(P) XXX
-&kp LG(LA(LC(N2)))      &kp LA(TAB)          &kp LG(N1)               &kp LG(N2)      &kp LG(N3)              &kp LG(LC(RIGHT))                                       &kp LG(LEFT) &kp LG(DOWN) &kp LG(UP) &kp LG(RIGHT) XXX XXX
-&kp LG(LA(LC(N1)))      &kp LG(LC(DOWN))     &win_left                &kp LG(PG_DN)   &win_right              &kp LG(LS(GRAVE)) ___                           ___    &kp LS(LA(H)) &kp LG(PG_DN) &kp LG(PG_UP) &kp LS(LA(L)) XXX XXX
+&kp LG(LA(LC(N2)))      &kp LA(TAB)          &kp LG(N1)               &kp LG(N2)      &switch_to_3              &kp LG(LC(RIGHT))                                       &kp LG(LEFT) &kp LG(DOWN) &kp LG(UP) &kp LG(RIGHT) XXX XXX
+&kp LG(LA(LC(N1)))      &kp LG(DOWN)     &win_left                &kp LG(PG_DN)   &win_right              &kp LC(LS(GRAVE)) ___                           ___    &kp LS(LA(H)) &kp LG(PG_DN) &kp LG(PG_UP) &kp LS(LA(L)) XXX XXX
                                                                                                                         ___ ___ ___ ___                   ___ ___ ___ ___
                         >;
                 };
