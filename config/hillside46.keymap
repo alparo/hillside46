@@ -127,7 +127,7 @@
                                 , <&macro_release &kp LGUI>
                                 ;
                 };
-                switch_to_8: switch_to_macro {
+                switch_to_8: switch_to_8_macro {
                         compatible = "zmk,behavior-macro";
                         #binding-cells = <0>;
                         bindings
@@ -137,7 +137,7 @@
                                 , <&macro_release &kp LGUI>
                                 ;
                 };
-                switch_to_9: switch_to_macro {
+                switch_to_9: switch_to_9_macro {
                         compatible = "zmk,behavior-macro";
                         #binding-cells = <0>;
                         bindings
@@ -147,7 +147,7 @@
                                 , <&macro_release &kp LGUI>
                                 ;
                 };
-                switch_to_0: switch_to_macro {
+                switch_to_0: switch_to_0_macro {
                         compatible = "zmk,behavior-macro";
                         #binding-cells = <0>;
                         bindings
