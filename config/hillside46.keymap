@@ -149,9 +149,10 @@
                         compatible = "zmk,behavior-macro-one-param";
                         #binding-cells = <1>;
                         bindings 
-                        = <&macro_press &kp LGUI>
-                        , <&macro_tap MACRO_PLACEHOLDER>
-                        , <&macro_release &kp LGUI>;
+                                = <&macro_press &kp LGUI>
+                                , <&macro_tap MACRO_PLACEHOLDER>
+                                , <&macro_release &kp LGUI>
+                                ;
                 };
         };
 
@@ -238,7 +239,7 @@ XXX        XXX &kp LA(N4) &kp LA(N5) &kp LA(N6) &kp LG(LC(RIGHT))               
                         bindings = <
 &kp LG(LA(LC(N3)))      &win_up       &kp LG(LA(LC(LEFT)))     &kp LG(PG_UP)   &kp LG(LA(LC(RIGHT)))   &kp LG(LC(LEFT))                                        XXX XXX XXX XXX XXX XXX
 &kp LG(LA(LC(N2)))      &kp LA(TAB)   &kp LG(N1)               &kp LG(N2)      &kp LG(N3)              &kp LG(LC(RIGHT))                                       &win_left &win_down  &win_up &win_right XXX XXX
-&kp LG(LA(LC(N1)))      &win_down     &win_left                &kp LG(PG_DN)   &win_arrow RIGHT        &kp LC(LS(GRAVE)) ___                           ___    XXX &kp LG(PG_DN) &kp LG(PG_UP) XXX XXX XXX
+&kp LG(LA(LC(N1)))      &win_down     &win_left                &kp LG(PG_DN)   &win_right        &kp LC(LS(GRAVE)) ___                           ___    XXX &kp LG(PG_DN) &kp LG(PG_UP) XXX XXX XXX
                                                                                                                         ___ ___ ___ ___                   ___ ___ ___ ___
                         >;
                 };
