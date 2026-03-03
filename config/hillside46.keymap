@@ -157,13 +157,13 @@
  * |  `    |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|   Y   |   U   |   I   |   O   |   P   |  [/]  |
  * |AC-Tab |   A   |   S   |   D   |   F   |   G   |-----------------------------------|   H   |   J   |   K   |   L   |   ;   |   '   |
  * |   -   |   Z   |   X   |   C   |   V   |   B   |  ESC  |-------------------|  INS  |   N   |   M   |   ,   |   .   |   /   |   \   |
- *                                 |HK/BSPC|FZ/TAB |NUM/SPC|HK/ENT |---|NAV/CW |FZ/BSPC| A/DEL |
+ *                                 |HK/BSPC|FZ/TAB |NUM/SPC|HK/ENT |HK/ENT |NAV/CW |FZ/BSPC| A/DEL |
  */
                         bindings = <
 &kp GRAVE      &kp Q &kp W &kp E &kp R &kp T &kp Y                                                    &kp U   &kp I  &kp O   &kp P    &mt RBKT LBKT
 &kp LA(LC(TAB)) &hrm LGUI A &hrm LALT S &hrm LSHIFT D &hrm LCTRL F  &kp G                             &kp H  &hrm RCTRL J &hrm RSHIFT K &hrm LALT L &hrm RGUI SEMI &kp SQT
 &kp MINUS 	&kp Z &kp X &kp C &kp V &kp B   &kp ESC                                   &kp INSERT  &kp N  &kp M  &kp COMMA    &kp DOT &kp FSLH &kp BSLH
-                                &lt HK BSPC &lt FZ TAB &lt NUM SPACE &lt HK RETURN     XXX &cw_ht NAV 0 &lt FZ BSPC &mt LALT DEL
+                                &lt HK BSPC &lt FZ TAB &lt NUM SPACE &lt HK RETURN     &lt HK RETURN &cw_ht NAV 0 &lt FZ BSPC &mt LALT DEL
                         >;
                 };
 		
@@ -200,18 +200,18 @@ XXX         &kp KP_N1   &kp KP_N2 &kp KP_N3 &kp KP_N4 &kp KP_N5  ___            
                 };
 
                 hotkeys_layer {
-/* HOTKEYS - A=Alt+1..9 numpad left, A-HJKLUIOP right | GC=Win+Ctrl desktop | AS=Alt+Shift
+/* HOTKEYS - G=Win+1..9 numpad left | GC=Win+Ctrl | GA=Win+Alt | GS=Win+Shift on HJKL right
  * -------------------------------------------------------------------------------------------------------------------------------------
- * | A-F4  |       |  A-7  |  A-8  |  A-9  | GC-<- |-----------------------------------|       |  A-U  |  A-I  |  A-O  |  A-P  |       |
- * |       |       |  A-4  |  A-5  |  A-6  | GC->  |-----------------------------------|  A-H  |  A-J  |  A-K  |  A-L  |       |       |
- * |  G-Z  |       |  A-1  |  A-2  |  A-3  |  G-0  |       |-------------------|       | AS-H  | AS-J  | AS-K  | AS-L  |       |       |
+ * |       |       |  G-7  |  G-8  |  G-9  | GC-<- |-----------------------------------| GC-H  | GC-J  | GC-K  | GC-L  |       |       |
+ * |       |       |  G-4  |  G-5  |  G-6  | GC->  |-----------------------------------| GA-H  | GA-J  | GA-K  | GA-L  |       |       |
+ * |       |       |  G-1  |  G-2  |  G-3  |  G-0  |       |-------------------|       | GS-H  | GS-J  | GS-K  | GS-L  |       |       |
  *                                 |       |       |       |       |---|       |       |       |       |
  */
                         bindings = <
-&kp LA(F4) XXX &kp LA(N7) &kp LA(N8) &kp LA(N9) &kp LG(LC(LEFT))                            XXX &kp LA(U) &kp LA(I) &kp LA(O) &kp LA(P) XXX
-XXX        XXX &kp LA(N4) &kp LA(N5) &kp LA(N6) &kp LG(LC(RIGHT))                           &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) XXX XXX
-&kp LG(Z)  XXX &kp LA(N1) &kp LA(N2) &kp LA(N3) &kp LG(N0) ___                           ___ &kp LS(LA(H)) &kp LS(LA(J)) &kp LS(LA(K)) &kp LS(LA(L)) XXX XXX
-                                                   ___ ___ ___ ___                   ___ ___ ___ ___
+XXX     XXX &kp LG(N7) &kp LG(N8) &kp LG(N9) &kp LG(LC(LEFT))                            &kp LC(LG(H)) &kp LC(LG(J)) &kp LC(LG(K)) &kp LC(LG(L)) XXX XXX
+XXX     XXX &kp LG(N4) &kp LG(N5) &kp LG(N6) &kp LG(LC(RIGHT))                           &kp LG(LA(H)) &kp LG(LA(J)) &kp LG(LA(K)) &kp LG(LA(L)) XXX XXX
+XXX     XXX &kp LG(N1) &kp LG(N2) &kp LG(N3) &kp LG(N0) ___                          ___ &kp LS(LG(H)) &kp LS(LG(J)) &kp LS(LG(K)) &kp LS(LG(L)) XXX XXX
+                                                ___ ___ ___ ___              ___ ___ ___ ___
                         >;
                 };
 		
