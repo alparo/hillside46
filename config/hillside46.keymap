@@ -232,7 +232,13 @@ XXX        XXX &kp LA(N4) &kp LA(N5) &kp LA(N6) &kp LG(LC(RIGHT))               
                 };
 
                 fancyzones_layer {
-
+/* FANCYZONES - Win+arrows snap, WAC+num FancyZones layouts, virtual desktops
+ * -------------------------------------------------------------------------------------------------------------------------------------
+ * | WAC-3 | W-UP  | WAC<- | W-PgU | WAC-> | DSK<- |-----------------------------------|       |       |       |       |       |       |
+ * | WAC-2 | A-Tab |  W-1  |  W-2  |  W-3  | DSK-> |-----------------------------------| W-LT  | W-DN  | W-UP  | W-RT  |       |       |
+ * | WAC-1 | W-DN  | W-LT  | W-PgD | W-RT  | CS-`  |       |-------------------|       |       | W-PgD | W-PgU |       |       |       |
+ *                                 |       |       |       |       |---|       |       |       |       |
+ */
                         bindings = <
 &kp LG(LA(LC(N3)))      &win_up       &kp LG(LA(LC(LEFT)))     &kp LG(PG_UP)   &kp LG(LA(LC(RIGHT)))   &kp LG(LC(LEFT))                                        XXX XXX XXX XXX XXX XXX
 &kp LG(LA(LC(N2)))      &kp LA(TAB)   &kp LG(N1)               &kp LG(N2)      &kp LG(N3)              &kp LG(LC(RIGHT))                                       &win_left &win_down  &win_up &win_right XXX XXX
