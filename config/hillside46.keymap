@@ -152,12 +152,12 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-/* QWERTY - HRM on ASDF/JKL; | ACT=Alt+Ctrl+Tab | [/]=tap:[, hold:] | hold thumb = layer, tap = key
+/* QWERTY - HRM on ASDF/JKL; | AC-Tab=Alt+Ctrl+Tab | [/]=tap:[, hold:] | thumb: hold=layer, tap=key
  * -------------------------------------------------------------------------------------------------------------------------------------
  * |  `    |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|   Y   |   U   |   I   |   O   |   P   |  [/]  |
- * | ACT   |   A   |   S   |   D   |   F   |   G   |-----------------------------------|   H   |   J   |   K   |   L   |   ;   |   '   |
+ * |AC-Tab |   A   |   S   |   D   |   F   |   G   |-----------------------------------|   H   |   J   |   K   |   L   |   ;   |   '   |
  * |   -   |   Z   |   X   |   C   |   V   |   B   |  ESC  |-------------------|  INS  |   N   |   M   |   ,   |   .   |   /   |   \   |
- *                                 |HK/BSPC|FZ/TAB |NUM/SPC|HK/ENT |---|NAV/CW |FZ/BSPC|ALT/DEL|
+ *                                 |HK/BSPC|FZ/TAB |NUM/SPC|HK/ENT |---|NAV/CW |FZ/BSPC| A/DEL |
  */
                         bindings = <
 &kp GRAVE      &kp Q &kp W &kp E &kp R &kp T &kp Y                                                    &kp U   &kp I  &kp O   &kp P    &mt RBKT LBKT
@@ -184,11 +184,11 @@ XXX             &kp EQUAL  &kp N7 &kp N8 &kp N9 &td1 &kp F6                 &kp 
                 };
 
                 nav_layer {
-/* NAV - left: F1-F5 top, symbols !@#$% home row, KP1-5 bottom | right: nav arrows, Ctrl+nav, volume
+/* NAV - left: F1-F5 top, symbols !@#$% home row, KP1-5 bottom | right: nav arrows, C=Ctrl+nav, volume
  * -------------------------------------------------------------------------------------------------------------------------------------
  * |       |  F1   |  F2   |  F3   |  F4   |  F5   |-----------------------------------| HOME  | PG_DN | PG_UP |  END  |       | VOL+  |
  * |  KP=  |   !   |   @   |   #   |   $   |   %   |-----------------------------------| LEFT  | DOWN  |  UP   | RIGHT | RALT  |PL/NXT |
- * |       |  KP1  |  KP2  |  KP3  |  KP4  |  KP5  |       |-------------------|       | C-LFT |C-PgDn |C-PgUp | C-RGT |       | VOL-  |
+ * |       |  KP1  |  KP2  |  KP3  |  KP4  |  KP5  |       |-------------------|       |  C-<- | C-PgD | C-PgU |  C->  |       | VOL-  |
  *                                 |       |       |       |       |---|       |       |       |       |
  */
                         bindings = <
@@ -200,11 +200,11 @@ XXX         &kp KP_N1   &kp KP_N2 &kp KP_N3 &kp KP_N4 &kp KP_N5  ___            
                 };
 
                 hotkeys_layer {
-/* HOTKEYS - Alt+1..9 (numpad layout left), Alt+HJKLUIOP (right), desktop/snap
+/* HOTKEYS - A=Alt+1..9 numpad left, A-HJKLUIOP right | GC=Win+Ctrl desktop | AS=Alt+Shift
  * -------------------------------------------------------------------------------------------------------------------------------------
- * | A-F4  |       |  A-7  |  A-8  |  A-9  | DSK<- |-----------------------------------|       |  A-U  |  A-I  |  A-O  |  A-P  |       |
- * |       |       |  A-4  |  A-5  |  A-6  | DSK-> |-----------------------------------|  A-H  |  A-J  |  A-K  |  A-L  |       |       |
- * |  W-Z  |       |  A-1  |  A-2  |  A-3  |  W-0  |       |-------------------|       | SA-H  | SA-J  | SA-K  | SA-L  |       |       |
+ * | A-F4  |       |  A-7  |  A-8  |  A-9  | GC-<- |-----------------------------------|       |  A-U  |  A-I  |  A-O  |  A-P  |       |
+ * |       |       |  A-4  |  A-5  |  A-6  | GC->  |-----------------------------------|  A-H  |  A-J  |  A-K  |  A-L  |       |       |
+ * |  G-Z  |       |  A-1  |  A-2  |  A-3  |  G-0  |       |-------------------|       | AS-H  | AS-J  | AS-K  | AS-L  |       |       |
  *                                 |       |       |       |       |---|       |       |       |       |
  */
                         bindings = <
@@ -232,11 +232,11 @@ XXX        XXX &kp LA(N4) &kp LA(N5) &kp LA(N6) &kp LG(LC(RIGHT))               
                 };
 
                 fancyzones_layer {
-/* FANCYZONES - Win+arrows snap, WAC+num FancyZones layouts, virtual desktops
+/* FANCYZONES - G=Win snap, GAC=Win+Alt+Ctrl FancyZones layouts, GC=Win+Ctrl desktops, SC=Shift+Ctrl
  * -------------------------------------------------------------------------------------------------------------------------------------
- * | WAC-3 | W-UP  | WAC<- | W-PgU | WAC-> | DSK<- |-----------------------------------|       |       |       |       |       |       |
- * | WAC-2 | A-Tab |  W-1  |  W-2  |  W-3  | DSK-> |-----------------------------------| W-LT  | W-DN  | W-UP  | W-RT  |       |       |
- * | WAC-1 | W-DN  | W-LT  | W-PgD | W-RT  | CS-`  |       |-------------------|       |       | W-PgD | W-PgU |       |       |       |
+ * | GAC-3 | G-UP  |GAC-<- | G-PgU | GAC-> | GC-<- |-----------------------------------|       |       |       |       |       |       |
+ * | GAC-2 | A-Tab |  G-1  |  G-2  |  G-3  | GC->  |-----------------------------------| G-<-  | G-DN  | G-UP  |  G->  |       |       |
+ * | GAC-1 | G-DN  | G-<-  | G-PgD |  G->  | SC-`  |       |-------------------|       |       | G-PgD | G-PgU |       |       |       |
  *                                 |       |       |       |       |---|       |       |       |       |
  */
                         bindings = <
