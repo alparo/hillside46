@@ -200,7 +200,13 @@ XXX         &kp KP_N1   &kp KP_N2 &kp KP_N3 &kp KP_N4 &kp KP_N5  ___            
                 };
 
                 hotkeys_layer {
-
+/* HOTKEYS - Alt+1..9 (numpad layout left), Alt+HJKLUIOP (right), desktop/snap
+ * -------------------------------------------------------------------------------------------------------------------------------------
+ * | A-F4  |       |  A-7  |  A-8  |  A-9  | DSK<- |-----------------------------------|       |  A-U  |  A-I  |  A-O  |  A-P  |       |
+ * |       |       |  A-4  |  A-5  |  A-6  | DSK-> |-----------------------------------|  A-H  |  A-J  |  A-K  |  A-L  |       |       |
+ * |  W-Z  |       |  A-1  |  A-2  |  A-3  |  W-0  |       |-------------------|       | SA-H  | SA-J  | SA-K  | SA-L  |       |       |
+ *                                 |       |       |       |       |---|       |       |       |       |
+ */
                         bindings = <
 &kp LA(F4) XXX &kp LA(N7) &kp LA(N8) &kp LA(N9) &kp LG(LC(LEFT))                            XXX &kp LA(U) &kp LA(I) &kp LA(O) &kp LA(P) XXX
 XXX        XXX &kp LA(N4) &kp LA(N5) &kp LA(N6) &kp LG(LC(RIGHT))                           &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) XXX XXX
