@@ -208,9 +208,9 @@ XXX         &kp KP_N1   &kp KP_N2 &kp KP_N3 &kp KP_N4 &kp KP_N5  ___            
  *                                 |       |       |       |       |---|       |       |       |       |
  */
                         bindings = <
-XXX     XXX &kp LG(N7) &kp LG(N8) &kp LG(N9) &kp LG(LC(LEFT))                            &kp LC(LG(H)) &kp LC(LG(J)) &kp LC(LG(K)) &kp LC(LG(L)) XXX XXX
-XXX     XXX &kp LG(N4) &kp LG(N5) &kp LG(N6) &kp LG(LC(RIGHT))                           &kp LG(LA(H)) &kp LG(LA(J)) &kp LG(LA(K)) &kp LG(LA(L)) XXX XXX
-XXX     XXX &kp LG(N1) &kp LG(N2) &kp LG(N3) &kp LG(N0) ___                          ___ &kp LS(LG(H)) &kp LS(LG(J)) &kp LS(LG(K)) &kp LS(LG(L)) XXX XXX
+XXX     XXX &kp LC(F7) &kp LC(F8) &kp LC(F9) &kp LG(LC(LEFT))                            &kp LC(LG(H)) &kp LC(LG(J)) &kp LC(LG(K)) &kp LC(LG(L)) XXX XXX
+XXX     XXX &kp LC(F4) &kp LC(F5) &kp LC(F6) &kp LG(LC(RIGHT))                           &kp LG(LA(H)) &kp LG(LA(J)) &kp LG(LA(K)) &kp LG(LA(L)) XXX XXX
+XXX     XXX &kp LC(F1) &kp LC(F2) &kp LC(F3) &kp LG(N0) ___                          ___ &kp LS(LG(H)) &kp LS(LG(J)) &kp LS(LG(K)) &kp LS(LG(L)) XXX XXX
                                                 ___ ___ ___ ___              ___ ___ ___ ___
                         >;
                 };
